@@ -7,16 +7,17 @@ html {
   color: #ffffff;
   background-color: #212830;
   font-family: "Segoe UI", sans-serif;
+  height: 100%;
 }
 
 body {
   margin: 0 auto;
+  height: 100%;
 }
 
 header {
   padding: 0;
-  width: 100%;
-  height: 100%;
+  height: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,10 +26,11 @@ header {
 
 main {
   padding: 1%;
+  margin: 0 auto;
 }
 
 h1 {
-color:#212830;
+  color: #212830;
 }
 
 h2 {
@@ -49,14 +51,18 @@ li {
 }
 
 nav {
-  height: 2%;
-  width: 30%;
+  position: relative;
+  margin: auto 0;
+  width: 40%;
+  height: 100%;
 }
 
 article {
   display: flexbox;
   margin: 1% auto;
   padding: 1%;
+  background-color: hsl(0, 0%, 20%);
+ backdrop-filter: blue(10px);
 }
 
 article h3 {
@@ -64,43 +70,87 @@ article h3 {
 }
 
 nav ul {
-  display: flex;
-  justify-content: end;
-  align-items: center;
   font-size: xx-large;
+  width: 100%;
+  height: 100%;
 }
 
 nav li {
-  padding: 2%;
-  margin: 0 2%;
+  display: grid;
+  width: 100%;
+  margin: 1% 2%;
   font-size: 1.5rem;
   text-align: center;
-  border-radius: 15px;
-  background: #212830;
+  color: #212830;
 }
 
-nav ul :hover {
-  background: #eacaae;
-  color: #212830;
+nav li :hover {
+  background: rgb(33, 40, 48, 0.3);
+  color: #fff;
 }
 
 nav a {
   all: unset;
-  color: #fff;
 }
 
-nav a :hover {
+.close {
   color: #212830;
+  font-size: xx-large;
 }
+
+.sidenav {
+  position: absolute;
+  bottom: -65%;
+  right: 0%;
+  width: 200px;
+  background-color: #eacaae;
+  padding: 10px;
+}
+
+/* .sidenav ::after {
+  display: none;
+} */
+
+.burger-icon {
+  position:absolute;
+  top: 40%;
+  right: 5%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 80px;
+}
+
+.burgerRod {
+  height: 4px;
+  width: 30px;
+  background-color: #a76d3a;
+}
+
+/* .rod1 ::after {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.rod2 ::after {
+  display: none;
+}
+
+.rod3 ::after {
+  transform:  rotate(45deg) translate(-4px, -6px);
+} */
 
 #logoToureille {
+  display: block;
+  margin: 2% auto;
+  height: 60%;
   border-radius: 50%;
 }
 
 #enseigneMaisonToureille {
   display: block;
   margin: 2% auto;
-  height: 2%;
+  height: 70%;
 }
 
 #equipe {
@@ -116,6 +166,9 @@ nav a :hover {
   display: flex;
 }
 
+#activities article {
+margin:1%
+}
 #activities article p {
   text-align: justify;
   margin-top: 4%;
@@ -128,7 +181,6 @@ nav a :hover {
 #presentation article p {
   text-align: center;
   margin-top: 4%;
-
 }
 
 #activities article img {

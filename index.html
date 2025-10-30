@@ -4,6 +4,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" />
     <link rel="stylesheet" href="style.css" />
 
     <title>Maison Toureille</title>
@@ -11,13 +12,11 @@
 
   <body>
     <header>
-      <div>
-        <img
-          id="logoToureille"
-          src="img/logoToureille.webp"
-          alt="Logo Maison Toureille"
-        />
-      </div>
+      <img
+        id="logoToureille"
+        src="img/logoToureille.webp"
+        alt="Logo Maison Toureille"
+      />
 
       <img
         id="enseigneMaisonToureille"
@@ -25,19 +24,34 @@
         alt="Enseigne Maison Toureille"
       />
 
-      <nav>
-        <ul>
-          <li><a href="index.html" aria-label="Lien accueil">Accueil</a></li>
-          <li>
-            <a href="#presentation" aria-label="Lien galerie photos "
-              >Présentation</a
-            >
-          </li>
-          <li>
-            <a href="#activities" aria-label="Lien boutique">Nos activités</a>
-          </li>
-        </ul>
+      <nav >
+
+        <a id="openBtn" href="#mySidenav">
+          <span class="burger-icon">
+            <span class="burgerRod rod1"></span>
+            <span class="burgerRod rod2"></span>
+            <span class="burgerRod rod3"></span>
+          </span>
+        </a>
+
+        <div id="mySidenav" class="sidenav">
+
+          <ul>
+            <li> <a href="index.html" aria-label="Lien vers la page accueil">Accueil</a></li>
+
+            <li><a href="#presentation" aria-label="Lien vers la partie présentation ">Présentation</a></li>
+
+            <li>
+              <a href="#activities" aria-label="Lien vers la partie nos activités">Nos activités</a>
+            </li>
+            
+          </ul>
+
+        </div>
+        
+      
       </nav>
+
     </header>
 
     <main>
@@ -52,10 +66,11 @@
             alt="L'équipe de la Maison Toureille"
           />
           <p>
-            Toute l’équipe de la Maison Toureille vous souhaite la bienvenue ! <br>
-            Profitez d’un agréable moment en famille ou entre amis 🥳 <br>
+            Toute l’équipe de la Maison Toureille vous souhaite la bienvenue !
+            <br />
+            Profitez d’un agréable moment en famille ou entre amis 🥳 <br />
             Laissez-vous tenter par nos délicieux gâteaux, viennoiseries ou un
-            bon pain pour accompagner votre repas. <br>
+            bon pain pour accompagner votre repas. <br />
             Vos papilles vont se régaler ! 😋
           </p>
         </article>
